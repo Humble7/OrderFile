@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "OrderFile.h"
+#import "OrderFileDemo-Swift.h"
 
 typedef void(^Block)(void);
 
@@ -30,10 +31,13 @@ void c_function() {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.block = ^{
         NSLog(@"");
     };
     self.block();
+    
+    [Swift swiftFunction];
     
     [OrderFile parseSymbolToFileWithSuccess:^(NSString * _Nonnull filePath) {
             NSLog(@"%@", filePath);
