@@ -14,8 +14,12 @@
 
 @implementation ViewController
 
-+ (void)load {
+void c_function() {
     
+}
+
++ (void)load {
+    c_function();
 }
 
 + (void)initialize {
