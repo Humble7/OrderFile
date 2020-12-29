@@ -294,11 +294,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28S828G24C;
 				INFOPLIST_FILE = OrderFileDemo/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-fsanitize-coverage=func,trace-pc-guard";
 				PRODUCT_BUNDLE_IDENTIFIER = com.humble.OrderFileDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,11 +314,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28S828G24C;
 				INFOPLIST_FILE = OrderFileDemo/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-fsanitize-coverage=func,trace-pc-guard";
 				PRODUCT_BUNDLE_IDENTIFIER = com.humble.OrderFileDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
