@@ -14,6 +14,7 @@
 		82FBBD5F259B87AA00694514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82FBBD5E259B87AA00694514 /* Assets.xcassets */; };
 		82FBBD62259B87AA00694514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FBBD60259B87AA00694514 /* LaunchScreen.storyboard */; };
 		82FBBD65259B87AA00694514 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FBBD64259B87AA00694514 /* main.m */; };
+		82FBBD79259B8D9500694514 /* OrderFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FBBD78259B8D9500694514 /* OrderFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		82FBBD61259B87AA00694514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82FBBD63259B87AA00694514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82FBBD64259B87AA00694514 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82FBBD77259B8D9500694514 /* OrderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFile.h; sourceTree = "<group>"; };
+		82FBBD78259B8D9500694514 /* OrderFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		82FBBD51259B87A900694514 /* OrderFileDemo */ = {
 			isa = PBXGroup;
 			children = (
+				82FBBD76259B8D9500694514 /* OrderFile */,
 				82FBBD52259B87A900694514 /* AppDelegate.h */,
 				82FBBD53259B87A900694514 /* AppDelegate.m */,
 				82FBBD55259B87A900694514 /* SceneDelegate.h */,
@@ -74,6 +78,15 @@
 				82FBBD64259B87AA00694514 /* main.m */,
 			);
 			path = OrderFileDemo;
+			sourceTree = "<group>";
+		};
+		82FBBD76259B8D9500694514 /* OrderFile */ = {
+			isa = PBXGroup;
+			children = (
+				82FBBD77259B8D9500694514 /* OrderFile.h */,
+				82FBBD78259B8D9500694514 /* OrderFile.m */,
+			);
+			path = OrderFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +160,7 @@
 			files = (
 				82FBBD5A259B87A900694514 /* ViewController.m in Sources */,
 				82FBBD54259B87A900694514 /* AppDelegate.m in Sources */,
+				82FBBD79259B8D9500694514 /* OrderFile.m in Sources */,
 				82FBBD65259B87AA00694514 /* main.m in Sources */,
 				82FBBD57259B87A900694514 /* SceneDelegate.m in Sources */,
 			);
