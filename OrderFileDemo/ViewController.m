@@ -14,6 +14,14 @@
 
 @implementation ViewController
 
++ (void)load {
+    
+}
+
++ (void)initialize {
+    [super initialize];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
