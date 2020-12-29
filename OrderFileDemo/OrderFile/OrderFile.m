@@ -75,8 +75,8 @@ void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
 }
 
 + (void)parseSymbolToFile:(NSString *)path
-                  success:(void (^)(void))success
-                     fail:(void (^)(void))fail {
+                  success:(Completion)success
+                     fail:(Completion)fail {
     isFinished = YES;
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         NSMutableArray<NSString *> * symbolNames = @[].mutableCopy;
@@ -126,11 +126,11 @@ void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
         BOOL result = [[NSFileManager defaultManager] createFileAtPath:path contents:fileContents attributes:nil];
         if (result) {
             if (success) {
-                success();
+                success(path);
             }
         } else {
             if (fail) {
-                fail();
+                fail(path);
             }
         }
     });

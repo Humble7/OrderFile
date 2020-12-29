@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^Completion)(void);
+typedef void(^Completion)(NSString *filePath);
 
 @interface OrderFile : NSObject
 

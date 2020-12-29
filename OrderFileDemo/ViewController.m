@@ -35,11 +35,12 @@ void c_function() {
     };
     self.block();
     
-    [OrderFile parseSymbolToFileWithSuccess:^{
+    [OrderFile parseSymbolToFileWithSuccess:^(NSString * _Nonnull filePath) {
+            NSLog(@"%@", filePath);
             [self alertWithContent:@"符号收集成功"];
-    } fail:^{
-        [self alertWithContent:@"符号收集失败"];
-    }];
+        } fail:^(NSString * _Nonnull filePath) {
+            [self alertWithContent:@"符号收集失败"];
+        }];
 }
 
 - (void)alertWithContent:(NSString *)content {
