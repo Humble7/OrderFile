@@ -8,8 +8,10 @@
 #import "ViewController.h"
 #import "OrderFile.h"
 
-@interface ViewController ()
+typedef void(^Block)(void);
 
+@interface ViewController ()
+@property (nonatomic, copy) Block block;
 @end
 
 @implementation ViewController
@@ -28,6 +30,10 @@ void c_function() {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.block = ^{
+        NSLog(@"");
+    };
+    self.block();
     
     [OrderFile parseSymbolToFileWithSuccess:^{
             [self alertWithContent:@"符号收集成功"];
